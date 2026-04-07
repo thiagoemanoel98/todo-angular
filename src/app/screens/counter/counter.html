@@ -1,5 +1,13 @@
 <div class="flex flex-col gap-6">
   <app-title main="Contador" sub="Exemplo de contador com Angular"></app-title>
 
-  <div><p>Bem-vindo à aplicação Angular!</p></div>
+  <div class="flex flex-col gap-4">
+    <span class="text-5xl font-black">{{ count() }}</span>
+
+    <div class="flex gap-3">
+      <button (click)="increment()" class="btn btn-primary">Incrementar</button>
+      <button (click)="decrement()" class="btn btn-secundary">Decrementar</button>
+      <button (click)="reset()" class="btn btn-danger">Resetar</button>
+    </div>
+  </div>
 </div>
