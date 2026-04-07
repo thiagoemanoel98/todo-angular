@@ -11,7 +11,7 @@ export const routes: Routes = [
     component: Home,
   },
   {
-    path: 'contador',
+    path: 'counter',
     loadComponent() {
       return import('./screens/counter/counter').then((m) => m.Counter);
     },
